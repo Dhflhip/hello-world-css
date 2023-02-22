@@ -1,0 +1,51 @@
+<!--ex.17 의사요소-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 문서</title>
+        <style>
+            /* 
+            first-line marker placeholder before after
+            */
+            p::first-line{
+                color: red;
+            }
+            p::first-letter{
+                color: purple;
+            }
+            li::marker{
+                color: red;
+                font-size: 25px;
+            }
+            input::placeholder{
+                font-size: 14px;
+                color: black;
+            }
+            p::before{
+                content:"앞에다 추가한 텍스트- ";
+            }
+            p::after{
+                content: " -뒤에다 추가한 텍스트";
+            }
+        </style>
+    </head>
+    <body>
+        <!-- first-line first-letter
+        <p>
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+        </p>
+        -->
+        <ul>
+            <li>マグロ</li>
+            <li>中トロ</li>
+            <li>大トロ</li>
+            <li>漬マグロ</li>
+        </ul>
+        <input type="text" placeholder="書いてください">
+        <p>원래 쓰여져 있던 내용</p>
+    </body>
+</html>

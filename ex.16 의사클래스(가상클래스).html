@@ -1,0 +1,56 @@
+<!--ex.16 의사클래스(가상클래스)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 문서</title>
+        <style>
+            /* hover, active
+            [type="button"]{
+                width: 100px; height: 30px;
+                background-color: tomato; color: white;
+                border: none; border-radius: 8px;
+            }
+            [type="button"]:hover{
+                background-color: gray;
+            }
+            [type="button"]:active{
+                background-color: black;
+            }
+            */
+            /* focus, disabled            
+            input:focus{
+                color: white;
+                background-color: red;
+            }
+            input:disabled{
+                height:100px;
+            }
+            */
+            body{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width: 50px; height: 50px;
+                background-color: blue; color: white;
+            }
+            .box:nth-child(2n){
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- hover, active
+        <input type="button" value="ボタン">
+        -->
+        <!-- focus, disabled
+        <input type="text" placeholder="아무거나 쓰기" disabled>
+        -->
+        <div class="box">1번</div>
+        <div class="box">2번</div>
+        <div class="box">3번</div>
+        <div class="box">4번</div>
+        <div class="box">5번</div>
+    </body>
+</html>

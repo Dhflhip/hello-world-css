@@ -1,0 +1,57 @@
+<!--ex.13 flexbox 1편, 정의 및 사용 방법-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 문서</title>
+        <style>
+        .container1{
+            display: flex;
+            flex-direction: column;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .container3{
+            display: flex;
+            flex-direction: row;
+        }
+        .container4{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .item{
+            width: 80px; height: 80px;
+            background-color: royalblue;
+            border: solid 1px black;
+            font-size: 5px; color: white;
+        }        
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="item">column1</div>
+            <div class="item">column2</div>
+            <div class="item">column3</div>
+        </div>
+        <br>
+        <div class="container2">
+            <div class="item">column-reverse1</div>
+            <div class="item">column-reverse2</div>
+            <div class="item">column-reverse3</div>
+        </div>
+        <br>
+        <div class="container3">
+            <div class="item">row1</div>
+            <div class="item">row2</div>
+            <div class="item">row3</div>
+        </div>
+        <br>        
+        <div class="container4">
+            <div class="item">row-reverse1</div>
+            <div class="item">row-reverse2</div>
+            <div class="item">row-reverse3</div>
+        </div>
+    </body>
+</html>
